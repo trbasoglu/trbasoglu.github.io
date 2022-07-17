@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html class="has-navbar-fixed-top" style="background-color:#1E1E26; width: 100%;">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tarık Ramazan Başoğlu</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="./sidebar.css">
+ 
+  </head>
+  <body onload="load_apps()" style="display: flex;
+  min-height: 100vh;
+  flex-direction: column;">
+    <nav class="navbar is-dark is-fixed-top" role="navigation" aria-label="main navigation" style="background-color: #1A1A20;" >
+        <div class="navbar-brand" style="padding-left: 10%;">
+          <a class="navbar-item" href="/" style="color:#0AD76A ;">
+            trbasoglu
+          </a>
+      
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+      
+        <div id="navbarBasicExample" class="navbar-end">
+          <div class="navbar-start">
+            <a class="navbar-item" href="/computerVision.html">
+              Computer Vision
+            </a>
+      
+            <a class="navbar-item" href="/mobile.html">
+              Mobile
+            </a>
+      
+            <!-- <a class="navbar-item">
+                Web
+              </a> -->
+        
+          </div>
+        </div>
+      </nav>
+      
+    <div style="z-index: 2; ">
+        <ul id="social-sidebar">
+            <li>
+              <a class="entypo-linkedin" href="https://www.linkedin.com/in/trbasoglu/"><span>Linkedin</span></a>
+            </li>
+            <li>
+              <a class="entypo-github" href="https://github.com/trbasoglu"><span>Github</span></a>
+            </li>
+            <li>
+                <a class="medium" href="https://trbasoglu.medium.com"><svg style="padding:10px" fill="white" xmlns="http://www.w3.org/2000/svg" viewBox="0  0 640 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M180.5,74.262C80.813,74.262,0,155.633,0,256S80.819,437.738,180.5,437.738,361,356.373,361,256,280.191,74.262,180.5,74.262Zm288.25,10.646c-49.845,0-90.245,76.619-90.245,171.095s40.406,171.1,90.251,171.1,90.251-76.619,90.251-171.1H559C559,161.5,518.6,84.908,468.752,84.908Zm139.506,17.821c-17.526,0-31.735,68.628-31.735,153.274s14.2,153.274,31.735,153.274S640,340.631,640,256C640,171.351,625.785,102.729,608.258,102.729Z"/></svg>
+                    <span>Medium</span></a>
+            </li>
+            <li>
+              <a class="entypo-mail" href="mailto:tarik.basoglu@outlook.com"><span>Mail</span></a>
+            </li>
+            <li>
+                <a class="entypo-location"><span>Izmir,Turkiye</span></a>
+              </li>
+          </ul>
+    </div>
+    <div style="padding-left: 7%; padding-right: 7%;flex: 1;">
+        <section class="section" id="apps">
+          <h1 class="title">
+            Mobile App Projects
+          </h1>
+          <h3 class="title is-4 green" id="appname"></h3>
+          <h3 class="subtitle is-4" id="appcontent"></h3>
+          <span class="tag"  id="app_tech"></span>
+          <br>
+          <a id="storelink"><image src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" style="border-radius: 10%; width: 200px;"></image></a>
+        </section>
+    </div>
+    
+    
+      
+      </div>
+
+      <footer class="footer" style="background-color: #1A1A20;">
+        <div class="content has-text-centered">
+          <p>
+            This site developed with <a href="https://bulma.io"><strong>Bulma</strong></a> framework.
+            Sidebar is taken <a href="https://webdevtrick.com/css-fixed-social-media-sidebar/">here.</a>
+            The source code is 
+            is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+          </p>
+        </div>
+      </footer>
+<script src="/index.js"></script>
+  </body>
+
+</html> 

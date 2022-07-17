@@ -1,0 +1,82 @@
+/* Code By Webdevtrick ( https://webdevtrick.com ) */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+@import url(https://weloveiconfonts.com/api/?family=entypo);
+ 
+[class^="entypo-"]:before {
+ font-family: 'entypo', sans-serif;
+}
+/* body {
+  background: #e6e6e6;
+} */
+#social-sidebar {
+ left: 0;
+ position: fixed;
+ top: 30%;
+}
+#social-sidebar li:first-child a { border-top-right-radius: 5px; }
+#social-sidebar li:last-child a { border-bottom-right-radius: 5px; }
+ 
+#social-sidebar a {
+ background: rgba(0, 0, 0, .7);
+ color: #fff;
+    text-decoration: none;
+ display: block;
+ height: 50px;
+ width: 50px;  
+ font-size: 24px;
+ line-height: 50px;
+ position: relative;
+ text-align: center;
+    cursor: pointer;
+}
+#social-sidebar a:hover span {
+ left: 120%;
+ opacity: 1;
+}
+#social-sidebar a span {
+  font: 12px "Open Sans", sans-serif;
+  text-transform: uppercase;
+ border-radius: 3px;
+ line-height: 24px;
+ left: -100%;
+ margin-top: -16px;
+ opacity: 0;
+ padding: 4px 8px;
+ position: absolute;
+ transition: opacity .3s, left .4s;
+ top: 50%;
+ z-index: -1;
+}
+ 
+#social-sidebar a span:before {
+ /* content: ""; */
+ display: block;
+ height: 8px;
+  width: 8px;
+ left: -4px;
+ margin-top: -4px;
+ position: absolute;
+ top: 50%;
+ transform: rotate(45deg);
+}
+ 
+
+#social-sidebar a[class*="linkedin"]:hover,
+#social-sidebar a[class*="linkedin"] span,
+#social-sidebar a[class*="linkedin"] span:before {background: #00aced;}
+ 
+#social-sidebar a[class*="github"]:hover,
+#social-sidebar a[class*="github"] span,
+#social-sidebar a[class*="github"] span:before {background: #9C7A5B;}
+ 
+#social-sidebar a[class*="mail"]:hover,
+#social-sidebar a[class*="mail"] span,
+#social-sidebar a[class*="mail"] span:before {background: #0072c6;}
+
+#social-sidebar a[class*="medium"]:hover,
+#social-sidebar a[class*="medium"] span,
+#social-sidebar a[class*="medium"] span:before {background: #3cb371;}
+
+#social-sidebar a[class*="location"]:hover,
+#social-sidebar a[class*="location"] span,
+#social-sidebar a[class*="location"] span:before {background: #E30A17;}
