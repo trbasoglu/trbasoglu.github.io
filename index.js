@@ -45,14 +45,10 @@ var projects = [
     {
         "image":"images/teknofest.png",
         "title":"Teknofest AI 2019",
-        "exp":[
-            "Final aşamasında işlemci ile yarışılmış ve başarı yüzdesinde 17. Toplam puanda 15. olduk.",
-        "25 takımdan oluşan kendi grubumuzda ilk gün 11. ikinci gün ise 4. olduk. Finale kalan 50 grup içinde ise ilk gün 21. İkinci gün 13. olduk.",
-        "Nesne tespitinde RFCN,RCNN,SSD,YOLO,FPN modellerinin araştırılması ve karşılaştırılması yapıldı",
-        "RFCN,RCNN ve yolo için eğitim ve testler yapıldı.",
-        "Tensorflow, openCv, sklearn, darknet gibi araç ve kütüphaneler kullanıldı.",
-        "Yaklaşık 1500 görsel etiketlendi.",
-        "Veri çeşitli metodlar uygulanarak çoğaltıldı."]
+        "exp":["We qualified for the finals for the first 50 teams and placed 15th.",
+        "RFCN,RCNN,SSD,YOLO and FPN models research and comparison were done.",
+        "RFCN,RCNN and yolo models trained and evaluated.",
+        "Tensorflow, openCv, sklearn, darknet were used."]
     },
     {
         "image":"images/pexels-pixabay-267350.jpg",
