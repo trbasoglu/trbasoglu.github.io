@@ -6,14 +6,15 @@ var workExperiences = {
         "timeline":"Nov 2019-now",
         "exp":[
             "I take critical roles in company and company make exit less than 3 year.",
-            "Machine learning model development on face landmark and segmentation.",
-            "Developing Labelling tools.",
-            "Ml model and algorithm deployment on different environments like Web client(tfjs, emscripten wasm), server(aws lambda, gcp cloud run&functions), apps)",
-            "Developing image processing algorithms for try-on solutions and professional photo edit app.",
+            "Machine learning model development on face landmark and segmentation.(Keras, Tensorflow)",
+            "Developing Labelling tools.(Python, Html,Css,JavaScript, Aws Groundtruth)",
+            "Ml model and algorithm deployment on different environments like Web client(tfjs, c++ emscripten wasm), server(Aws Lambda, GCP Cloud Run&Functions,Python, Flask,Fastapi), apps",
+            "Developing core image processing algorithms for try-on solutions and professional photo edit mobileapp. (C++, Python, OpenCV)",
             "Flutter app development",
-            "Development of first versions of virtual try-on plugin"
+            "Development of first versions of virtual try-on plugin (Django,Js,Css,Html,Aws)"
         ],
-        "location":"İzmir, Turkiye"
+        "location":"İzmir, Turkiye",
+        "url":"https://pulpoar.com"
     },
     "NKR Software":{
         "role":"Machine Learning - Intern",
@@ -21,11 +22,12 @@ var workExperiences = {
         "accent-color":"#F3CE1F",
         "timeline":"Feb-Mar 2018",
         "exp":[
-            "Plate detection and recognition software developed.",
-            "Optical Character recognition system developed.",
+            "Plate detection and recognition software developed.(Keras, Tensorflow, OpenCV)",
+            "Optical Character recognition system developed.(Sklearn)",
             "Data Labelling & analysing."
         ],
-        "location":"Ankara, Turkiye"
+        "location":"Ankara, Turkiye",
+        "url":"https://www.nkr.com.tr"
     },
     "Mentornity":{
         "role":"Android Developer - Intern",
@@ -33,11 +35,12 @@ var workExperiences = {
         "accent-color":"#B00021",
         "timeline":"Jul-Aug 2018",
         "exp":[
-            "Take role on developing Ecosystem Feed application.",
+            "Take role on developing Ecosystem Feed application.(Java, Native Android)",
             "OneSignal, Firebase, linkedin Api are used.",
             "Playstore app publish processes are learned."
         ],
-        "location":"İstanbul, Turkiye"
+        "location":"İstanbul, Turkiye",
+        "url":"https://www.mentornity.com"
     }
 }
 
@@ -125,48 +128,48 @@ var cv_projects = [
 ]
 var techStack = {
     "Computer Vision":[
-        {"name":"OpenCV","logo":"images/techstack/opencv.png"},
-        {"name":"Keras","logo":"images/techstack/Keras_Logo.jpg"},
+        {"name":"OpenCV","logo":"images/techstack/opencv.png","exp":"It is my specialty"},
+        {"name":"Keras","logo":"images/techstack/Keras_Logo.jpg", "exp":"fav for model creation"},
         {"name":"Tensorflow","logo":"images/techstack/icons8-tensorflow-48.png"},
         {"name":"Sklearn","logo":"images/techstack/scikit-learn-logo-8766D07E2E-seeklogo.com.png"},
         {"name":"Numpy","logo":"images/techstack/numpy-logo-479C24EC79-seeklogo.com.png"},
-        {"name":"Tfjs","logo":"images/techstack/Tensorflow_logo.svg"},
-        {"name":"Tflite","logo":"images/techstack/Tensorflow_logo.svg"},
-        {"name":"OnnxRuntime","logo":"images/techstack/ONNX-Runtime-logo.svg"},
-        {"name":"Python","logo":"images/techstack/icons8-python-48.png"},
-        {"name":"C++","logo":"images/techstack/icons8-c++-48.png"},
-        {"name":"JavaScript","logo":"images/techstack/icons8-javascript-48.png"},
-        {"name":"Aws Sagemaker&Groundtruth","logo":"images/techstack/icons8-amazon-web-services-48.png"},
+        {"name":"Tfjs","logo":"images/techstack/Tensorflow_logo.svg","exp":"Not frequently used"},
+        {"name":"Tflite","logo":"images/techstack/Tensorflow_logo.svg","exp":"android, c++, python<br>Not frequently used"},
+        {"name":"OnnxRuntime","logo":"images/techstack/ONNX-Runtime-logo.svg","exp":"c++,python<br> project specific"},
+        {"name":"Python","logo":"images/techstack/icons8-python-48.png","exp":"my fav language"},
+        {"name":"C++","logo":"images/techstack/icons8-c++-48.png","exp":"Used when<br> performance need"},
+        {"name":"JavaScript","logo":"images/techstack/icons8-javascript-48.png","exp":"Middle knowledge"},
+        {"name":"Aws Sagemaker&Groundtruth","logo":"images/techstack/icons8-amazon-web-services-48.png", "exp":"For training ml models<br>Labelling data"},
     ],
     "Mobile":[
-        {"name":"Flutter","logo":"images/techstack/icons8-flutter-48.png"},
-        {"name":"Native Android","logo":"images/techstack/icons8-android-os-48.png"},
+        {"name":"Flutter","logo":"images/techstack/icons8-flutter-48.png", "exp":"Mostly used since 2019"},
+        {"name":"Native Android","logo":"images/techstack/icons8-android-os-48.png", "exp":"Not used since 2019"},
         // {"name":"React Native","logo":""},
         {"name":"Dart","logo":"images/techstack/icons8-dart-48.png"},
-        {"name":"Java","logo":"images/techstack/icons8-java-48.png"},
+        {"name":"Java","logo":"images/techstack/icons8-java-48.png", "exp":"Not used since 2019<br>Most used before"},
         {"name":"Firebase","logo":"images/techstack/icons8-firebase-48.png"}
     ],
     "Web":[
-        {"name":"Django","logo":"images/techstack/icons8-django-48.png"},
-        {"name":"AWS","logo":"images/techstack/icons8-amazon-web-services-48.png"},
-        {"name":"GCP","logo":"images/techstack/icons8-google-cloud-48.png"},
-        {"name":"Fast Api","logo":"images/techstack/fastapi.png"},
-        {"name":"Serverless","logo":"images/techstack/serverless dark.svg"},
-        {"name":"Python","logo":"images/techstack/icons8-python-48.png"},
-        {"name":"Html/Css","logo":"images/techstack/icons8-html-5-48.png"},
-        {"name":"JavaScript","logo":"images/techstack/icons8-javascript-48.png"}
+        {"name":"Django","logo":"images/techstack/icons8-django-48.png","exp":"python Backend framework, familiar"},
+        {"name":"AWS","logo":"images/techstack/icons8-amazon-web-services-48.png","exp":"Sagemaker,Lambda,S3"},
+        {"name":"GCP","logo":"images/techstack/icons8-google-cloud-48.png","exp":"Vertex AI,Storage,Cloud Run, Functions"},
+        {"name":"Fast Api","logo":"images/techstack/fastapi.png","exp":"Python framework to create api."},
+        {"name":"Serverless","logo":"images/techstack/serverless dark.svg","exp":"It is used with aws lambda"},
+        {"name":"Python","logo":"images/techstack/icons8-python-48.png","exp":"my fav language"},
+        {"name":"Html/Css","logo":"images/techstack/icons8-html-5-48.png","exp":"Middle knowledge"},
+        {"name":"JavaScript","logo":"images/techstack/icons8-javascript-48.png","exp":"Middle knowledge"}
     ],
     "Other":[
-        {"name":"C#","logo":"images/techstack/icons8-c-sharp-logo-48.png"},
-        {"name":"Adobe XD","logo":"images/techstack/icons8-adobe-xd-48.png"},
+        {"name":"C#","logo":"images/techstack/icons8-c-sharp-logo-48.png", "exp":"used in unity project"},
+        {"name":"Adobe XD","logo":"images/techstack/icons8-adobe-xd-48.png",},
         {"name":"Admob","logo":"images/techstack/icons8-google-admob-48.png"},
         {"name":"Play Console","logo":"images/techstack/icons8-google-play-48.png"},
         {"name":"Android Studio","logo":"images/techstack/icons8-android-studio-48.png"},
-        {"name":"Linux","logo":"images/techstack/icons8-linux-48.png"},
+        {"name":"Linux","logo":"images/techstack/icons8-linux-48.png", "exp":"sudo"},
         {"name":"Unity","logo":"images/techstack/icons8-unity-50.png"},
         {"name":"Markdown","logo":"images/techstack/icons8-markdown-50.png"},
         {"name":"Git","logo":"images/techstack/icons8-git-48.png"},
-        {"name":"Web Assembly with Emscripten","logo":"images/techstack/WebAssembly_Logo.svg.png"},
+        {"name":"Web Assembly with Emscripten","logo":"images/techstack/WebAssembly_Logo.svg.png","exp":"to run c++<br> on browsers"},
     ]
 }
 
@@ -233,7 +236,9 @@ var apps = [
     "icon":"images/bildirim.png"},
     
 ]
-
+{/* <div class="tooltip"><spa class="tag tooltip">Sample</spa>
+        
+      </div> */}
 function load_tech_stack(){
     techstack_container = document.getElementById("techstack_container")
     for (var key in techStack){
@@ -245,8 +250,12 @@ function load_tech_stack(){
         techdiv.classList = ["tags are-medium"]
         for(var index in techStack[key]){
             var techspan = document.createElement("span")
-            techspan.classList = ["tag is-rounded"]
-            techspan.innerHTML = '<figure class="image is-16x16"><img src="'+techStack[key][index]["logo"]+'"></figure>'+techStack[key][index]["name"]
+            techspan.classList = ["tag is-rounded tooltip"]
+            if(techStack[key][index]["exp"]==undefined){
+                techspan.innerHTML = `<figure class="image is-16x16"><img src="${techStack[key][index]["logo"]}"></figure>${techStack[key][index]["name"]}`
+            }else{
+            techspan.innerHTML = `<figure class="image is-16x16"><img src="${techStack[key][index]["logo"]}"></figure>${techStack[key][index]["name"]}<span class="tooltiptext">${techStack[key][index]["exp"]}`
+            }
             //techspan.innerHTML = techStack[key][index]["name"]
             techdiv.appendChild(techspan)
         }
@@ -269,10 +278,10 @@ function load_work_experiences(){
         companyInfodiv.classList = ["column is-10"] 
         var experienceList = document.createElement("ul")
         experienceList.classList = ["subtitle is-6"]
-        var companyInfoInnerHtml = `<h4 class="title is-4" style="color:${workExperiences[key]["accent-color"]}">${key}</h1>
-                <h5 class="subtitle is-6" >${workExperiences[key]["role"]}</h1>
+        var companyInfoInnerHtml = `<a href="${workExperiences[key]["url"]}" target="_blank"><h4 class="title is-4" style="color:${workExperiences[key]["accent-color"]}">${key}</h4></a>
+                <h5 class="subtitle is-6 green" >${workExperiences[key]["role"]}</h5>
                 <p class="subtitle is-6">
-                    <ul style="color: white;">`
+                    <ul style="color: white; list-style: disc;">`
         for(var experience in workExperiences[key]["exp"]){
             companyInfoInnerHtml += `<li>${workExperiences[key]["exp"][experience]}</li>`
         }
@@ -300,7 +309,7 @@ function load_projects(id, projects){
         experienceList.classList = ["subtitle is-6"]
         var projectInfoInnerHtml = `<h4 class="title is-4 green">${projects[key]["title"]}</h1>
                 <p class="subtitle is-6">
-                    <ul style="color: white;">`
+                    <ul style="color: white;list-style: disc;">`
         for(var experience in projects[key]["exp"]){
             projectInfoInnerHtml += `<li>${projects[key]["exp"][experience]}</li>`
         }
@@ -361,3 +370,38 @@ function load_apps(){
     appsDiv.innerHTML = appsDivInnerHtml;
     select_app(0);
 }
+
+
+document.addEventListener('DOMContentLoaded', () => {
+
+    // Get all "navbar-burger" elements
+    const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+    
+    // Add a click event on each of them
+    $navbarBurgers.forEach( el => {
+      el.addEventListener('click', () => {
+    
+        // Get the target from the "data-target" attribute
+        const target = el.dataset.target;
+        const $target = document.getElementById(target);
+    
+        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+        el.classList.toggle('is-active');
+        $target.classList.toggle('is-active');
+    
+      });
+    });
+    
+    });
+      $(document).ready(function() {
+    
+    // Check for click events on the navbar burger icon
+    $(".navbar-burger").click(function() {
+    
+        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+        $(".navbar-burger").toggleClass("is-active");
+        $(".navbar-menu").toggleClass("is-active");
+    
+    });
+    });
+    // // $(".navbar-menu").toggleClass("is-active");
