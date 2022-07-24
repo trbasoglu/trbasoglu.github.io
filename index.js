@@ -20,7 +20,7 @@ var workExperiences = {
         "role":"Machine Learning - Intern",
         "logo":"images/nkrlogo.png",
         "accent-color":"#F3CE1F",
-        "timeline":"Feb-Mar 2018",
+        "timeline":"Feb-Mar 2019",
         "exp":[
             "Plate detection and recognition software developed. (Keras, Tensorflow, OpenCV)",
             "An optical character recognition system was developed. (Sklearn)",
@@ -236,6 +236,14 @@ var apps = [
     "icon":"images/bildirim.png"},
     
 ]
+
+timeline= [
+    {"title":"Hacettepe University | Computer Science","duration":5*12,"start_year":2014, "start_month":9, "color":"#e42624"},
+    {"title":"Hacettepe University | School of Foreign Languages","duration":12,"start_year":2014, "start_month":9, "color":"#b1b1b1"},
+    {"title":"Mentornity | Android Developer - Intern","duration":2,"start_year":2018, "start_month":07, "color":"#B00021"},
+    {"title":"NKR Software | Machine Learning Intern","duration":1,"start_year":2019, "start_month":2, "color":"#F3CE1F"},
+    {"title":"PulpoAR | Computer Vision Engineer & RD Team Lead","duration":-1,"start_year":2019, "start_month":11, "color":"#5B0097"},
+]
 {/* <div class="tooltip"><spa class="tag tooltip">Sample</spa>
         
       </div> */}
@@ -291,7 +299,6 @@ function load_work_experiences(){
         companyInfodiv.innerHTML = companyInfoInnerHtml
         companydiv.appendChild(companyInfodiv)
         work_experiences_container.appendChild(companydiv)
-        console.log(key)
     }
 }
 
@@ -318,10 +325,10 @@ function load_projects(id, projects){
         projectInfodiv.innerHTML = projectInfoInnerHtml
         projectsdiv.appendChild(projectInfodiv)
         projects_container.appendChild(projectsdiv)
-        console.log(key)
     }
 }
 function load_home(){
+    load_timeline()
     load_work_experiences()
     load_projects("projects", projects);
     load_tech_stack();
@@ -369,6 +376,39 @@ function load_apps(){
     appsDivInnerHtml+="</span>"
     appsDiv.innerHTML = appsDivInnerHtml;
     select_app(0);
+}
+
+function load_timeline(){
+    years_to_show = [2014,2015,2019,2020,2022]
+    
+    start_year = 2014
+    var currentTime = new Date();
+    total_duration = 12*(currentTime.getFullYear()-start_year)+currentTime.getMonth()
+    timelineDiv = document.getElementById("timeline")
+    for(var index in years_to_show){
+        year = years_to_show[index]
+        timeline_calendar = document.getElementById("timeline-calendar")
+        var left_percent = 5+(((year-start_year)*12)/total_duration)*90
+        if (year>start_year && screen.width<400)
+            year -=2000; 
+        timeline_calendar.innerHTML+= `<span class="timeline-dot" style="left: ${left_percent}%;"><br>${year}</span>`
+    }
+    for(var index in timeline){
+        var timeline_item = timeline[index]
+        var width_percent = (timeline_item.duration/total_duration)*90//Because I want 5% padding horizontally
+        var left_percent = 5+(((timeline_item.start_year-2014)*12+timeline_item.start_month)/96)*90//Because I want 5% padding horizontally
+        if(timeline_item.duration==-1){
+            width_percent = 100-left_percent
+        }
+        // alert(left_percent)
+        timelineDiv.innerHTML += `<div class="timeline-line" style="width: ${width_percent}%; left: ${left_percent}%;background-color: ${timeline[index]["color"]};"></div>`
+    }
+    for(var index in timeline){
+        var timeline_item = timeline[index]
+        timelineDiv.innerHTML +=`<div class="timeline-dot-title">
+        <span class="timeline-dot" style="left:0%; background-color:${timeline_item.color};"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp${timeline_item.title} 
+      </div class="timeline-dot-title">`
+    }
 }
 
 
