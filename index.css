@@ -32,3 +32,21 @@
 .tooltip:hover .tooltiptext {
   visibility: visible;
 }
+
+.timeline-dot{
+  display: inline-block;
+  background-color: #0AD76A33;
+  color: white;
+  width: 15px;
+  position: absolute;
+  height: 15px;
+  border-radius: 50%;
+  left: 50%;
+  font-size: small;
+}
+.timeline-line{
+  height: 5px; position:relative;border-radius: 5px;
+}
+.timeline-dot-title{
+  color: white;
+}
