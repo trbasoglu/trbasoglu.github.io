@@ -5,13 +5,13 @@ var workExperiences = {
         "accent-color":"#5B0097",
         "timeline":"Nov 2019-now",
         "exp":[
-            "I take critical roles in company and company make exit less than 3 year.",
-            "Machine learning model development on face landmark and segmentation.(Keras, Tensorflow)",
-            "Developing Labelling tools.(Python, Html,Css,JavaScript, Aws Groundtruth)",
-            "Ml model and algorithm deployment on different environments like Web client(tfjs, c++ emscripten wasm), server(Aws Lambda, GCP Cloud Run&Functions,Python, Flask,Fastapi), apps",
-            "Developing core image processing algorithms for try-on solutions and professional photo edit mobileapp. (C++, Python, OpenCV)",
+            "I took critical roles in the company and the company is acquired in less than 3 years.",
+            "Machine learning model development on face landmark and segmentation. (Keras, Tensorflow)",
+            "Developing Labelling tools.(Python, Html,CSS,JavaScript, Aws Groundtruth)",
+            "ML model and algorithm deployment on different environments like Web client(tfjs, c++ emscripten wasm), server(Aws Lambda, GCP Cloud Run&Functions, Python, Flask, Fastapi), apps",
+            "Developing core image processing algorithms for try-on solutions and professional photo edit mobile app. (C++, Python, OpenCV)",
             "Flutter app development",
-            "Development of first versions of virtual try-on plugin (Django,Js,Css,Html,Aws)"
+            "Development of first versions of the virtual try-on plugin (Django, Js, CSS, Html, Aws)"
         ],
         "location":"İzmir, Turkiye",
         "url":"https://pulpoar.com"
@@ -22,9 +22,9 @@ var workExperiences = {
         "accent-color":"#F3CE1F",
         "timeline":"Feb-Mar 2018",
         "exp":[
-            "Plate detection and recognition software developed.(Keras, Tensorflow, OpenCV)",
-            "Optical Character recognition system developed.(Sklearn)",
-            "Data Labelling & analysing."
+            "Plate detection and recognition software developed. (Keras, Tensorflow, OpenCV)",
+            "An optical character recognition system was developed. (Sklearn)",
+            "Data Labelling & analyzing."
         ],
         "location":"Ankara, Turkiye",
         "url":"https://www.nkr.com.tr"
@@ -35,9 +35,9 @@ var workExperiences = {
         "accent-color":"#B00021",
         "timeline":"Jul-Aug 2018",
         "exp":[
-            "Take role on developing Ecosystem Feed application.(Java, Native Android)",
-            "OneSignal, Firebase, linkedin Api are used.",
-            "Playstore app publish processes are learned."
+            "Take a role in developing the Ecosystem Feed application. (Java, Native Android)",
+            "OneSignal, Firebase, and Linkedin API are used.",
+            "Playstore app publishing processes are learned."
         ],
         "location":"İstanbul, Turkiye",
         "url":"https://www.mentornity.com"
@@ -49,16 +49,16 @@ var projects = [
         "image":"images/teknofest.png",
         "title":"Teknofest AI 2019",
         "exp":["We qualified for the finals for the first 50 teams and placed 15th.",
-        "RFCN,RCNN,SSD,YOLO and FPN models research and comparison were done.",
-        "RFCN,RCNN and yolo models trained and evaluated.",
-        "Tensorflow, openCv, sklearn, darknet were used."]
+        "RFCN, RCNN, SSD, YOLO, and FPN models research and comparison were done.",
+        "RFCN, RCNN, and Yolo models were trained and evaluated.",
+        "Tensorflow, OpenCV, sklearn, and darknet were used."]
     },
     {
         "image":"images/pexels-pixabay-267350.jpg",
         "title":"Android Apps",
         "exp":["I've developed more than 10 apps.",
-        "I publish my apps on Google play Store",
-        "I've developed with native Android Sdk(Java) and Flutter(Dart)"]
+        "I publish my apps on Google Play Store",
+        "I've developed with native Android SDK(Java) and Flutter(Dart)"]
     }
 ]
 
@@ -66,19 +66,19 @@ var cv_projects = [
     {
         "image":"/images/city.jpeg",
         "title":"Prediction Of Life Qualities",
-        "exp":["Project aims to predict life quality of city by using numerical data.",
+        "exp":["The project aims to predict the life quality of a city by using numerical data.",
         "Project blogged every week on medium.",
-        "85 features(Hospital, school,park numbers per capita, etc.) is extracted from json files.",
+        "85 features(Hospital, school, park numbers per capita, etc.) are extracted from JSON files.",
         "Classification and regression  models were developed.",
-        "SVM, Decision Tree, Random forest algorithms used."]
+        "SVM, Decision Tree, and Random forest algorithms were used."]
     },
     {
         "image":"images/car-road.jpg",
         "title":"WAD Video segmentation",
         "exp":[
-            "It is a segmentation task contains cars,roads,sky and etc.",
+            "It is a segmentation task containing cars, roads, sky and etc.",
             "U-net model is used.",
-            "30GB(20 traing-10test) data used for train and evaluation.",
+            "30GB(20 training-10test) data was used for training and evaluation.",
             "Keras ve tensorflow is used."
         ]
     },
@@ -86,8 +86,8 @@ var cv_projects = [
         "image":"images/drone.jpg",
         "title":"Graduation project",
         "exp":[
-            "It is a UAV project includes Remote Pilot Station(RPS), Fly control system(FCS) and object tracking systems.",
-            "UAV could not completed because of fly accident.",
+            "It is a UAV project that includes Remote Pilot Station(RPS), a Fly control system(FCS), and object tracking systems.",
+            "UAV could not complete because of a fly accident.",
             "Data communication between Raspberry pi-RPS ",
             "Tracking Algorithms(MIL, KCF, TLD, MEDIANFLOW, GOTURN, MOSSE,CSRT) research and application",
             "Data production for car detection",
@@ -100,10 +100,10 @@ var cv_projects = [
         "exp":[
             "Project completed in 3 weeks.",
             "Plate Detection&Recognition system developed.",
-            "Data preperation and OCR system development is done because of tesseract not stable enough.",
-            "1200 images labelled and trained.",
-            "Rcnn and yolo models used.",
-            "Darknet, Keras, OpenCV were used."
+            "Data preparation and OCR system development is done because of tesseract is not stable enough.",
+            "1200 images labeled and trained.",
+            "Rcnn and yolo models were used.",
+            "Darknet, Keras, and OpenCV were used."
         ]
     },
     
@@ -111,18 +111,18 @@ var cv_projects = [
         "image":"images/teknofest.png",
         "title":"Teknofest AI 2019",
         "exp":["We qualified for the finals for the first 50 teams and placed 15th.",
-        "RFCN,RCNN,SSD,YOLO and FPN models research and comparison were done.",
-        "RFCN,RCNN and yolo models trained and evaluated.",
-        "Tensorflow, openCv, sklearn, darknet were used."]
+        "RFCN, RCNN, SSD, YOLO, and FPN models research and comparison were done.",
+        "RFCN, RCNN, and Yolo models were trained and evaluated.",
+        "Tensorflow, OpenCV, sklearn, and darknet were used."]
     },
     {
         "image":"images/captcha_sample.jpg",
         "title":"Captha Resolve Algorithm",
         "exp":[
-            "Random symbols are placed radom place on random image with random color and ratio.Task is find places of symbols given order.",
-            "Template matching, surf matching, object detection and classification algorithms used to solve problem.",
-            "Above algorithms used together by voting mechanism.",
-            "Efficientnet is used because of size and speed concerns."
+            "Random symbols are placed randomly placed on the random images with random colors and ratios. The task is to find places of symbols given order.",
+            "Template matching, surf matching, object detection, and classification algorithms were used to solve problems.",
+            "The above algorithms were used together by a voting mechanism.",
+            "Efficientnet was used because of size and speed concerns."
         ]
     },
 ]
@@ -175,12 +175,12 @@ var techStack = {
 
 var apps = [
     {"name":"Bil Bakalım",
-    "exp":"It is a word game.Keyboard is created for game. Animations are highly used.",
+    "exp":"It is a word game. A keyboard is created for the game. Animations are highly used.",
     "Tech":"Flutter",
     "Store Link":"https://play.google.com/store/apps/details?id=com.hisario.bilbakalim&hl=tr&gl=US",
     "icon":"https://play-lh.googleusercontent.com/cX3rzUVfMxfPm7v9eheOIJFjmE5UEWGdaPHwHOTDSO88FnvRrxBD4A_qFtfxjg4MwZDZ=s64-rw"},
     {"name":"Times Up - Screen on time viewer, floating window",
-    "exp":"It is an app to prevent over usage phone. It displays passed time on floating window.",
+    "exp":"It is an app to prevent over usage of phones. It displays passed time on the floating window.",
     "Tech":"Native Android with Java",
     "Store Link":"https://play.google.com/store/apps/details?id=com.hisario.hisario.sayac",
     "icon":"https://play-lh.googleusercontent.com/rhq3RDd3p5eIyLi6HXk2E8PKJulp1lQsJt6-tdaBBLr3ytUbrCndFz5eukmLfUW14B4=s64-rw"},
@@ -190,32 +190,32 @@ var apps = [
     "Store Link":"https://play.google.com/store/apps/details?id=com.hisario.todaysquote&hl=en&gl=US",
     "icon":"https://play-lh.googleusercontent.com/jNWwxS-zGOO0b_AxTKbVR-9uPtvirOXoXD7tclJ5Uh585wzQ2631qamKXkyTi2mzWg=s64-rw"},
     {"name":"Tyt Kimya - Hızlı Sorular",
-    "exp":"It is a education app for chemistry.It is a last native android app that I have developed.",
+    "exp":"It is an education app for chemistry. It is the last native android app that I have developed.",
     "Tech":"Native Android with Java",
     "Store Link":"https://play.google.com/store/apps/details?id=com.hisario.tytkimya&hl=en&gl=US",
     "icon":"https://play-lh.googleusercontent.com/Bs_0Axivrz_fgD4txoJCBmm_EdQkg8JMTAWQdtHUcVLr-xp8Mz2Pf0F1SIf2lrmiQds=s64-rw"},
     {"name":"Radion",
-    "exp":"It is a radio app supports background play, widget, and notification controls.",
+    "exp":"It is a radio app that supports background play, widgets, and notification controls.",
     "Tech":"Native Android with Java Backend",
     "Store Link":"",
     "icon":"images/radyon.png"},
     {"name":"Tozlu Kelimeler",
-    "exp":"It is similar app with Today's Quote. It shows old turkish words that not used today as before.",
+    "exp":"It is a similar app to Today's Quote. It shows old Turkish words that are not used today as before.",
     "Tech":"Native Android with Java Backend",
     "Store Link":"",
     "icon":"images/tozlu_keli,meler.png"},
     {"name":"Ekolog",
-    "exp":"Currency track app. It supports different type of widgets.",
+    "exp":"Currency track app. It supports different types of widgets.",
     "Tech":"Native Android with Java",
     "Store Link":"",
     "icon":"images/ekolog.png"},
     {"name":"Free Games of week",
-    "exp":"Simple app that shows free games for limited time. Aws lambda and firebase is used to track free games.",
+    "exp":"Simple app that shows free games for a limited time. Aws lambda and firebase are used to track free games.",
     "Tech":"Flutter",
     "Store Link":"",
     "icon":"images/freegames.png"},
     {"name":"Kolay Tercih",
-    "exp":"It is an app that hold university and program details. ",
+    "exp":"It is an app that holds university and program details.",
     "Tech":"Flutter",
     "Store Link":"https://play.google.com/store/apps/details?id=com.hisario.tercihrehberi&hl=tr&gl=US",
     "icon":"https://play-lh.googleusercontent.com/Q8Yk38uRSgrZJoK74W9HTiSdIwv6wL9KoXgNYFtIxBnH5KdY3wi3wpobTMcLZVr7xgQ=s64-rw"},
@@ -225,12 +225,12 @@ var apps = [
     "Store Link":"https://play.google.com/store/apps/details?id=tictactoe.hisario.com.tictactoe&hl=tr&gl=US",
     "icon":"https://play-lh.googleusercontent.com/3R8eMQKF5QsoATaIo26wX-zyO-4eNBe9wGSa64G_jZ6Yz71VfNDQtjTl9zr5Zq7rj_4=s64-rw"},
     {"name":"AYT Edebiyat yazar bilgi eser",
-    "exp":"It is a another exam work app.",
+    "exp":"It is another exam work app.",
     "Tech":"Flutter",
     "Store Link":"https://play.google.com/store/apps/details?id=hisario.com.yazar_eser&hl=tr",
     "icon":"https://play-lh.googleusercontent.com/iztvSbgFZ9HwVfoDwWzjhZM_MME1wrv96rFuPxOdD_e0be9HJt0mIA4PuxBQakuK7A=s64-rw"},
     {"name":"Notification Track",
-    "exp":"It is an app to list and track notification.It becomes default Android feature while I'm developing an app.",
+    "exp":"It is an app to list and track notifications. It becomes the default Android feature while I'm developing an app.",
     "Tech":"Flutter",
     "Store Link":"",
     "icon":"images/bildirim.png"},
