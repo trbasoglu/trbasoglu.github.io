@@ -50,3 +50,7 @@
 .timeline-dot-title{
   color: white;
 }
+
+body{
+  cursor: url('/images/cursor.svg'), auto;
+}
