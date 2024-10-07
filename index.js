@@ -240,9 +240,31 @@ var apps = [
 timeline= [
     {"title":"Hacettepe University | Computer Science","duration":5*12,"start_year":2014, "start_month":9, "color":"#e42624"},
     {"title":"Hacettepe University | School of Foreign Languages","duration":12,"start_year":2014, "start_month":9, "color":"#b1b1b1"},
-    {"title":"Mentornity | Android Developer - Intern","duration":2,"start_year":2018, "start_month":07, "color":"#B00021"},
+    {"title":"Mentornity | Android Developer - Intern","duration":2,"start_year":2018, "start_month":7, "color":"#B00021"},
     {"title":"NKR Software | Machine Learning Intern","duration":1,"start_year":2019, "start_month":2, "color":"#F3CE1F"},
     {"title":"PulpoAR | Computer Vision Engineer & RD Team Lead","duration":-1,"start_year":2019, "start_month":11, "color":"#5B0097"},
+]
+
+techstack_timeline= [
+    {"title":"Java", "duration":12*5,"start_year":2014, "start_month":11,"color":"#e66f02"},
+    {"title":"Android", "duration":12*3.5,"start_year":2016, "start_month":6,"color":" #3DDC84"},
+    {"title":"Dart&Flutter", "duration":8,"start_year":2019, "start_month":4,"color":"#59aee7"},
+    {"title":"Dart&Flutter", "duration":14,"start_year":2020, "start_month":9,"color":"#59aee7"},
+    {"title":"ML", "duration":36,"start_year":2017, "start_month":9,"color":"#ff8b00"},
+    {"title":"Image Processing", "duration":-1,"start_year":2017, "start_month":9,"color":"linear-gradient(90deg, rgba(135,211,100,1) 30%, rgba(247,41,66,1) 35%, rgba(247,41,66,1) 60%, rgba(17,137,247,1) 66%);"},
+    {"title":"Unity", "duration":14,"start_year":2019, "start_month":11,"color":"linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(50,50,50,1) 50%, rgba(255,255,255,1) 99%);"},
+    {"title":"AWS", "duration":5,"start_year":2020, "start_month":11,"color":"#f7981f"},
+    {"title":"GCP", "duration":2,"start_year":2021, "start_month":11,"color":"linear-gradient(90deg, rgba(243,182,5,1) 0%, rgba(227,65,51,1) 35%, rgba(64,129,236,1) 60%, rgba(50,163,80,1) 100%)"},
+    {"title":"Python", "duration":-1,"start_year":2014, "start_month":11,"color":"linear-gradient(90deg, rgba(242,201,57,1) 0%, rgba(242,201,57,1) 45%, rgba(54,108,155,1) 55%);"},
+    {"title":"Cpp", "duration":24,"start_year":2015, "start_month":9,"color":"linear-gradient(90deg, rgba(43,82,142,1) 0%, rgba(93,135,188,1) 52%, rgba(34,65,112,1) 100%);"},
+    {"title":"Cpp", "duration":-1,"start_year":2021, "start_month":8,"color":"linear-gradient(90deg, rgba(43,82,142,1) 0%, rgba(93,135,188,1) 52%, rgba(34,65,112,1) 100%);"},
+    {"title":"C#", "duration":14,"start_year":2019, "start_month":11,"color":"linear-gradient(90deg, rgba(55,0,140,1) 0%, rgba(156,117,213,1) 52%, rgba(39,0,101,1) 100%);"},
+    {"title":"Django", "duration":5,"start_year":2020, "start_month":8,"color":"#0a2d1f"},
+    {"title":"FastApi", "duration":1,"start_year":2019, "start_month":11,"color":"#023a35"},
+    {"title":"FastApi", "duration":2,"start_year":2021, "start_month":11,"color":"#023a35"},
+    {"title":"FastApi", "duration":2,"start_year":2024, "start_month":5,"color":"#023a35"},
+    {"title":"Web Assembly", "duration":-1,"start_year":2021, "start_month":8,"color":"linear-gradient(90deg, rgba(43,153,200,1) 0%, rgba(87,51,138,1) 100%);"},
+    {"title":"Web Js&Html&Css", "duration":-1,"start_year":2018, "start_month":8,"color":"#f7d800"}
 ]
 {/* <div class="tooltip"><spa class="tag tooltip">Sample</spa>
         
@@ -328,7 +350,8 @@ function load_projects(id, projects){
     }
 }
 function load_home(){
-    load_timeline()
+    load_timeline(timeline,"career")
+    load_timeline(techstack_timeline,"stack")
     load_work_experiences()
     load_projects("projects", projects);
     load_tech_stack();
@@ -378,13 +401,17 @@ function load_apps(){
     select_app(0);
 }
 
-function load_timeline(){
+function load_timeline(timeline, type){
     years_to_show = [2014,2015,2019,2020,2022]
     
     start_year = 2014
     var currentTime = new Date();
     total_duration = 12*(currentTime.getFullYear()-start_year)+currentTime.getMonth()
     timelineDiv = document.getElementById("timeline")
+    var title = document.createElement("h6")
+    title.classList = ["title is-6"]
+    title.innerHTML = type
+    timelineDiv.appendChild(title);
     for(var index in years_to_show){
         year = years_to_show[index]
         timeline_calendar = document.getElementById("timeline-calendar")
@@ -396,19 +423,31 @@ function load_timeline(){
     for(var index in timeline){
         var timeline_item = timeline[index]
         var width_percent = (timeline_item.duration/total_duration)*90//Because I want 5% padding horizontally
-        var left_percent = 5+(((timeline_item.start_year-2014)*12+timeline_item.start_month)/96)*90//Because I want 5% padding horizontally
+        var left_percent = 5+(((timeline_item.start_year-2014)*12+timeline_item.start_month)/total_duration)*90//Because I want 5% padding horizontally
         if(timeline_item.duration==-1){
             width_percent = 100-left_percent
         }
         // alert(left_percent)
-        timelineDiv.innerHTML += `<div class="timeline-line" style="width: ${width_percent}%; left: ${left_percent}%;background-color: ${timeline[index]["color"]};"></div>`
+        timelineDiv.innerHTML += `<div class="timeline-line" style="width: ${width_percent}%; left: ${left_percent}%;background: ${timeline[index]["color"]};"></div>`
     }
-    for(var index in timeline){
-        var timeline_item = timeline[index]
-        timelineDiv.innerHTML +=`<div class="timeline-dot-title">
-        <span class="timeline-dot" style="left:0%; background-color:${timeline_item.color};"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp${timeline_item.title} 
-      </div class="timeline-dot-title">`
+    if(type==="career"){
+        for(var index in timeline){
+            var timeline_item = timeline[index]
+            timelineDiv.innerHTML +=`<div class="timeline-dot-title">
+            <span class="timeline-dot" style="left:0%; background-color:${timeline_item.color};"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp${timeline_item.title} 
+          </div class="timeline-dot-title">`
+        }
     }
+    if(type==="stack"){
+        timelineDiv.innerHTML +=`<div class="tags">`
+        for(var index in timeline){
+            var timeline_item = timeline[index]
+            console.log(timeline_item)
+            timelineDiv.innerHTML += `<span class="tag" style="margin-left:2em; background:${timeline_item.color}; color:white;">${timeline_item.title} </span>`
+        }
+        timelineDiv.innerHTML+="</div>"
+    
+        }
 }
 
 
